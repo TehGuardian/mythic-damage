@@ -1,6 +1,6 @@
-
-
+# Mythic-Damages
 --Add the following to `client/hud.lua`:
+# Functions
 
 ForceHP = function(self)
 		SendNUIMessage({
