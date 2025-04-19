@@ -1,7 +1,10 @@
 # Mythic-Damages
---Add the following to `client/hud.lua`:
+-- Add the following to `client/hud.lua`:
+
+
 # Functions
 
+```
 ForceHP = function(self)
 		SendNUIMessage({
 			type = "UPDATE_HP",
@@ -12,13 +15,11 @@ ForceHP = function(self)
 			},
 		})
 end,
-
+```
 
 
 -- Should look like this:
---[[
-
-
+```
 HUD = {
 _required = { "IsDisabled", "IsDisabledAllowDead", "Show", "Hide", "Toggle", "Vehicle", "RegisterStatus" },
 IsDisabled = function(self)
@@ -52,5 +53,4 @@ ForceHP = function(self)
 		},
 	})
 end,
-
-]]
+```
