@@ -1,5 +1,5 @@
 # Mythic-Damages
--- Add the following to `client/hud.lua`:
+-- Add the following to `client/hud.lua` in Mythic-Hud:
 
 
 # Functions
