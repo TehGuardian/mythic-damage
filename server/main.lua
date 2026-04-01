@@ -20,6 +20,7 @@ function DamageComponents()
 	--Damage = exports["mythic-base"]:FetchComponent("Damage")
 	Execute = exports["mythic-base"]:FetchComponent("Execute")
 	Status = exports["mythic-base"]:FetchComponent("Status")
+	Version = exports["mythic-base"]:FetchComponent("Version")
 	RegisterChatCommands()
 end
 
@@ -34,6 +35,7 @@ AddEventHandler("Core:Shared:Ready", function()
 		--"Damage",
 		"Execute",
 		"Status",
+		"Version",
 	}, function(error)
 		if #error > 0 then
 			return
@@ -93,6 +95,8 @@ AddEventHandler("Core:Shared:Ready", function()
 				cb(menuData)
 			end
 		end)
+
+		Version:Check('Mythic-Framework/Mythic-VersionCheckers', GetCurrentResourceName())
 	end)
 end)
 
